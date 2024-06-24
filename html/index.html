@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/d91e44ae42.js" crossorigin="anonymous"></script>
+    <title>Portafolio personal</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/images/logo.png" class="logo" alt="logo">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre mí</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Desarrollador y Diseñador gráfico</p>
+                <h1>Hola soy <span>Cristian</span> <br>Panche soy de españa </h1>
+            </div>
+        </div>
+    </div>
+    <!------------ Sobre mí ----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/user.png" alt="perfil">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Sobre Mí</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil ratione error officia, optio molestiae aliquid eius, neque, facere deserunt nulla eligendi? Neque id omnis eius. Rerum maxime obcaecati nemo optio quaerat voluptatum possimus ducimus excepturi libero aperiam sapiente id delectus iure eum omnis numquam soluta, magni voluptates corrupti! Temporibus, eos? </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('habilidades')">Habilidades</p>
+                        <p class="tab-links" onclick="opentab('experiencia')">Experiencia</p>
+                        <p class="tab-links" onclick="opentab('educacion')">Educación</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="habilidades">
+                        <ul>
+                            <li>
+                                <span>Diseño gráfico</span>
+                                <br>Transformación de ideas en impactantes imágenes y diseños visuales para comunicar mensajes de manera efectiva.
+                            </li>
+                            <li>
+                                <span>Desarrollador Frontend</span>
+                                <br>Desarrollo de interfaces web interactivas y optimizadas para mejorar la experiencia del usuario y la funcionalidad del sitio.
+                            </li>
+                            <li>
+                                <span>Desarrollador Backend</span>
+                                <br>Mantenimiento de sistemas y servidores para garantizar el rendimiento, la seguridad y la escalabilidad de aplicaciones web.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiencia">
+                        <ul>
+                            <li>
+                                <span>2022 - Actual</span>
+                                <br>Diseñador gráfico
+                            </li>
+                            <li>
+                                <span>2024 - Actual</span>
+                                <br>Desarrollador FullStack
+                            </li>
+                            <li>
+                                <span>2019 - 2024</span>
+                                <br>Coordinador de equipo Amazon / Dia
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educacion">
+                        <ul>
+                            <li>
+                                <span>2024 - Actual</span>
+                                <br>Bootcamp - Desarrollador FullStack ( Fundacion Esplai)
+                            </li>
+                            <li>
+                                <span>2022 - 2023</span>
+                                <br>Curso superior de Diseño Grafico ( Escuela ESPAI )
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------ servicios ---------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Servicios</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Diseño Grafico</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut incidunt provident tempore ea placeat dolor ad culpa magnam porro.</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-to-square"></i>
+                    <h2>Diseño web</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut incidunt provident tempore ea placeat dolor ad culpa magnam porro.</p>
+                    <a href="#">Leer más</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Desarrollo web</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam aut incidunt provident tempore ea placeat dolor ad culpa magnam porro.</p>
+                    <a href="#">Leer más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------ proyectos ---------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Mis proyectos</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="/images/work-1.png">
+                            <div class="layer">
+                                <h3>Social media</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur qui veritatis accusantium suscipit iure assumenda nesciunt facilis, similique deserunt autem nisi dolor sunt ipsam porro corporis molestiae voluptates quae dolore?</p>
+                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                    </div>
+                    <div class="work">
+                        <img src="/images/work-2.png">
+                        <div class="layer">
+                            <h3>App music</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur qui veritatis accusantium suscipit iure assumenda nesciunt facilis, similique deserunt autem nisi dolor sunt ipsam porro corporis molestiae voluptates quae dolore?</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="/images/work-3.png">
+                        <div class="layer">
+                            <h3>Online shopping app</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur qui veritatis accusantium suscipit iure assumenda nesciunt facilis, similique deserunt autem nisi dolor sunt ipsam porro corporis molestiae voluptates quae dolore?</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">Ver más</a>
+        </div>
+    </div>
+   <!------------- Contacto ----------------->
+
+    <script src="/js/botonesExperiencia.js"></script>
+</body>
+</html>
