@@ -12,13 +12,15 @@
         <div class="container">
             <nav>
                 <img src="/images/logo.png" class="logo" alt="logo">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre mí</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contacto</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Inicio</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Desarrollador y Diseñador gráfico</p>
@@ -177,5 +179,6 @@
    </div>
 
     <script src="/js/botonesExperiencia.js"></script>
+    <script src="/js/despliegueMenu.js"></script>
 </body>
 </html>
