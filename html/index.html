@@ -152,7 +152,7 @@
         </div>
     </div>
    <!------------- Contacto ----------------->
-   <div class="contact">
+   <div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -166,19 +166,43 @@
                 <a href="/cv_cristian_panche.pdf" download class="btn btn2">Descargar CV</a>
             </div>
             <div class="contact-right">
-                <form action="">
-                    <input type="text" name="Name" placeholder="Ingrese tu nombre" required>
-                    <input type="email" name="email" placeholder="Ingrese tu Email" required>
-                    <input type="text" name=number placeholder="Ingrese su numero de telefono">
-                    <textarea name="Message" rows="6" placeholder="Ingresa tu mensaje"></textarea>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="NOMBRE" placeholder="Ingrese tu nombre" required>
+                    <input type="email" name="EMAIL" placeholder="Ingrese tu Email" required>
+                    <textarea name="MENSAJE" rows="6" placeholder="Ingresa tu mensaje"></textarea>
                     <button type="submit" class="btn btn2">Enviar</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
    </div>
-
+   <div class="footer">
+    <p>
+        <i class="fa-solid fa-heart corazon"></i> Gracias por visitar mi pagina
+        <a href="https://www.linkedin.com/in/cristianp98"><i class="fa-brands fa-linkedin linkedinFooter"></i></a>
+        <a href="https://github.com/CristianP98"><i class="fa-brands fa-square-github githubFooter"></i></a>
+    </p>
+   </div>
     <script src="/js/botonesExperiencia.js"></script>
     <script src="/js/despliegueMenu.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz832rGRB8gpgN-4I2MoAmQUlnNhVgPXWf5TPxVGK83dJe9SxtjkRb3J8FwEt3x1sM/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Mensaje enviado correctamente"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 4000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
 </body>
 </html>

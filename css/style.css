@@ -311,6 +311,31 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
+/* ------------footer------------- */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.corazon {
+    color: #ff004f;
+    font-size: 22px;
+}
+.linkedinFooter, .githubFooter{
+    color: #fff;
+    font-size: 22px;
+    margin: 0 3px;
+}
+/* --------------mensaje de contacto ----------------- */
+#msg{
+    color: #61b752;
+    margin-top: -15px;
+    display: block;
+}
 
 /* ------------------- css for small screens -------- */
 nav .fa-solid{
